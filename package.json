@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/felixzapata/gulp-i18n-pug"
+    "url": "https://github.com/nlfonseca/gulp-i18n-pug"
   },
   "keywords": [
     "gulpplugin",
@@ -15,8 +15,8 @@
     "internationalization"
   ],
   "author": {
-    "name": "Félix Zapata",
-    "url": "github.com/felixzapata"
+    "name": "Nelson Fonseca",
+    "url": "github.com/nlfonseca"
   },
   "scripts": {
     "test": "gulp test"
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "js-yaml": "~3.2.2",
-    "pug": "^2.0.0-beta6",
+    "pug": ">=2.0.0-alpha <3",
     "through2": "^2.0.1"
   }
 }

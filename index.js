@@ -1,8 +1,8 @@
 /*
- * gult-stubby
- * https://github.com/felixzapata/gulp-i18n-pug
+ * gult-i18n-pug
+ * https://github.com/nlfonseca/gulp-i18n-pug
  *
- * Copyright (c) 2016 Félix Zapata
+ * Copyright (c) 2017 Nelson Fonseca
  * Licensed under the MIT license.
  */
 
@@ -165,12 +165,11 @@ function plugI18nPlugin(customOptions) {
                 }
 
                 compiledFiles.push(new gutil.File({
-                    base: path.join(__dirname, locale),
-                    cwd: __dirname,
+                    base: "",
+                    cwd: "",
                     contents: new Buffer(pug.compileFile(file.path, options)(options.data)),
-                    path: path.join(options.i18n.dest, dest)
+                    path: dest
                 }));
-
             }
 
         } else {
